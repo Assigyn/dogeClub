@@ -27,8 +27,8 @@
            <?php include("header.php"); ?>
          </header>
 
-         <div id="entreprisesBgHeader">
-         </div>
+          <div id="BgHeader" class="entreprisesBg">
+          </div>
 
       </div> <!-- End of fluid-container -->
 
