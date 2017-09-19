@@ -5,10 +5,17 @@ include('header.php');
 ?>
 
 
-<div id="BgHeader" class="entreprisesBg">
-</div>
+<!--<div id="BgHeader" class="entreprisesBg">
+</div>-->
 
 </div> <!-- End of fluid-container -->
+
+<div id="videoBlock" style="width: 100%; height: 500px;" data-vide-bg="video/ocean"
+     data-vide-options="position: 0% 50%">
+    <div id="videoOver"><h1>Notre diversité fait notre unité</h1>
+        <div class="videoTitleDeco"></div>
+        <h3>Le club Doge, fédérateur des entreprises du numérique</h3></div>
+</div>
 
 <div class="container">
 
@@ -135,29 +142,28 @@ include('header.php');
 
     <div id="indexAgenda">
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-4 ">
-                <div class="agendaCellIndex">
-                    <h5>21/08/2018</h5>
-                    <p>Tournoi de ping pong</p>
-                </div>
+            <div class="col-lg-12">
+                <ul>
+                    <li>
+                        <a href="#"><h4>21/09/2018</h4>
+                            <p>Tournoi de ping pong</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><h4>21/09/2018</h4>
+                            <p>Tournoi de ping pong</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><h4>21/09/2018</h4>
+                            <p>Tournoi de ping pong</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-4 ">
-                <div class="agendaCellIndex">
-                    <h5>21/08/2018</h5>
-                    <p>Tournoi de ping pong</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-4 ">
-                <div class="agendaCellIndex">
-                    <h5>21/08/2018</h5>
-                    <p>Tournoi de ping pong</p>
-                </div>
-            </div>
-        </div>
+
+        <button class="btn btn-primary">Voir l'agenda</button>
 
     </div>
 

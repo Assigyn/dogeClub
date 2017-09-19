@@ -54,15 +54,55 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.vide.js"></script>
+
 
 <script>
-    $(document).ready(function() {
-        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    $(document).ready(function () {
+        $('.js-scrollTo').on('click', function () { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
             var speed = 750; // Durée de l'animation (en ms)
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            $('html, body').animate({scrollTop: $(page).offset().top}, speed); // Go
             return false;
         });
+
+        $('#videoBlock').vide('video/ocean'); // Non declarative initialization
+
+        var instance = $('#videoBlock').data('vide'); // Get the instance
+        var video = instance.getVideoObject(); // Get the video object
+        instance.destroy(); // Destroy instance
+
+        $('#videoBlock').vide({
+            'mp4': 'video/ocean',
+            'webm': 'video/ocean',
+            'ogv': 'video/ocean',
+            'poster': 'video/ocean',
+        });
+
+        var $lightbox = $('#lightbox');
+
+        $('[data-target="#lightbox"]').on('click', function (event) {
+            var $img = $(this).find('img'),
+                src = $img.attr('src'),
+                alt = $img.attr('alt'),
+                css = {
+                    'maxWidth': $(window).width() - 100,
+                    'maxHeight': $(window).height() - 100
+                };
+
+            $lightbox.find('.close').addClass('hidden');
+            $lightbox.find('img').attr('src', src);
+            $lightbox.find('img').attr('alt', alt);
+            $lightbox.find('img').css(css);
+        });
+
+        $lightbox.on('shown.bs.modal', function (e) {
+            var $img = $lightbox.find('img');
+
+            $lightbox.find('.modal-dialog').css({'width': $img.width()});
+            $lightbox.find('.close').removeClass('hidden');
+        });
+
     });
 </script>
 
