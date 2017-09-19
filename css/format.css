@@ -89,6 +89,25 @@ a{
   margin: 0;
 }
 
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
+
 .entreprisesBg{
     background: url(../img/liste_bg.jpg) 0 58% no-repeat;
 }
@@ -100,6 +119,12 @@ a{
 .agendaBg{
     background: url(../img/agenda_bg.jpg) 0 58% no-repeat;
 }
+
+/* A voir image pour la page
+.galleryBg{
+    background: url(../img/gallery_bg.jpg) 0 58% no-repeat;
+}
+*/
 
 #titleDeco{
   border-bottom: 2px solid grey;
