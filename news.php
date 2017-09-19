@@ -1,7 +1,7 @@
 <?php
-    $currentPage ="businesses";
-    $titlePage = "Les entreprises du Doge";
-    include('header.php');
+$currentPage = "news";
+$titlePage = "Les actualités";
+include('header.php');
 ?>
 
 <div id="BgHeader" class="entreprisesBg">
@@ -15,7 +15,7 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h2>Les entreprises</h2>
+                <h2>Les actualités</h2>
                 <div id="titleDeco">
                     <div id="titleDecoForm">
                     </div>
@@ -23,8 +23,7 @@
             </div>
         </div>
 
-
-        <div id="main">
+        <div id="main" class="col-lg-9 col-md-8">
 
             <div class="row">
                 <div class="businessPresentation">
@@ -36,9 +35,6 @@
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
                                 <h3>Kayak Communication</h3>
                             </div>
-                            <div class="jobOffer col-md-3 col-sm-12 col-xs-12 no-padding">
-                                <p><a href="#">2 offres d'emploi</a></p>
-                            </div>
                         </div>
                         <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
                             communication
@@ -48,7 +44,7 @@
                             à travers des prestations online et offline.
                         </p>
                         <div class="knowMore">
-                            <button type="button" name="button" class="btn btn-primary">En savoir plus</button>
+                            <a href="#">> En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -64,9 +60,6 @@
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
                                 <h3>Kayak Communication</h3>
                             </div>
-                            <div class="jobOffer col-md-3 col-sm-12 col-xs-12 no-padding">
-                                <p><a href="#">2 offres d'emploi</a></p>
-                            </div>
                         </div>
                         <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
                             communication
@@ -76,7 +69,7 @@
                             à travers des prestations online et offline.
                         </p>
                         <div class="knowMore">
-                            <button type="button" name="button" class="btn btn-primary">En savoir plus</button>
+                            <a href="#">> En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -92,9 +85,6 @@
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
                                 <h3>Kayak Communication</h3>
                             </div>
-                            <div class="jobOffer col-md-3 col-sm-12 col-xs-12 no-padding">
-                                <p><a href="#">2 offres d'emploi</a></p>
-                            </div>
                         </div>
                         <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
                             communication
@@ -104,7 +94,7 @@
                             à travers des prestations online et offline.
                         </p>
                         <div class="knowMore">
-                            <button type="button" name="button" class="btn btn-primary">En savoir plus</button>
+                            <a href="#">> En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -120,9 +110,6 @@
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
                                 <h3>Kayak Communication</h3>
                             </div>
-                            <div class="jobOffer col-md-3 col-sm-12 col-xs-12 no-padding">
-                                <p><a href="#">2 offres d'emploi</a></p>
-                            </div>
                         </div>
                         <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
                             communication
@@ -132,12 +119,18 @@
                             à travers des prestations online et offline.
                         </p>
                         <div class="knowMore">
-                            <button type="button" name="button" class="btn btn-primary">En savoir plus</button>
+                            <a href="#">> En savoir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+        </div>
+
+        <div id="twitterPart" class="col-lg-3 col-md-4 hidden-xs visible-md visible-lg">
+            <a class="twitter-timeline" data-height="800" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
 

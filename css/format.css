@@ -1,314 +1,364 @@
 /*  CSS HEADER ET NAV  */
 
-header{
-  background-color: #fff;
-  padding-top: 15px;
+header {
+    background-color: #fff;
+    padding-top: 15px;
 }
 
-.navbar{
-  margin:0;
-  min-height: 60px;
+.navbar {
+    margin: 0;
+    min-height: 60px;
 }
 
-.navbar-default{
-  border-color: transparent;
+.navbar-default {
+    border-color: transparent;
 }
 
-.navbar-default{
-  background-color: #fff;
+.navbar-default {
+    background-color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a{
-  background-color: #FF622A;
-  color: #fff;
-  border-width: 1px;
-  border-radius: 20px;
-  transition: background-color 0.5s;
+.navbar-default .navbar-nav > .active > a {
+    background-color: #FF622A;
+    color: #fff;
+    border-width: 1px;
+    border-radius: 20px;
+    transition: background-color 0.5s;
 }
 
-.navbar-default .navbar-nav>.active>a:hover{
-  background-color: #282e5c;
-  color: #fff;
-  transition: background-color 0.5s;
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #282e5c;
+    color: #fff;
+    transition: background-color 0.5s;
 }
 
-.nav>li>a{
-  padding: 10px 30px;
+.nav > li > a {
+    padding: 10px 30px;
 }
 
 /*  CSS CONTENU  */
 
-
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
-h2{
-  text-align: center;
-  margin-bottom:20px;
-  text-transform: uppercase;
-  margin-top: -30px;
-  padding-top: 40px;
-  background-color: white;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   /* margin-top: -30px;
+    padding-top: 40px;
+    background-color: white;*/
 }
 
-h3{
+h3 {
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-h4{
+h4 {
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-body{
-  background-color: #eee;
+body {
+    background-color: #eee;
 }
 
-section{
-  background-color: white;
-  padding-bottom: 150px;
+.bodyWhite {
+    background-color: #fff;
 }
 
-p, ul{
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5em;
+.greyBgIndex {
+    background-color: #eee;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
-a{
+.whiteBgIndex {
+    padding-top: 30px;
+}
+
+
+section {
+    background-color: white;
+    padding-bottom: 150px;
+    overflow: hidden;
+    margin-top: -40px;
+    padding-top: 25px;
+}
+
+section#indexPage{
+    margin-top: 20px;
+    padding-bottom:30px;
+}
+
+
+p, ul {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+}
+
+a {
     color: #fb6d3b;
 }
 
-#BgHeader{
-  height: 280px;
-  width: 100%;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
+#BgHeader {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
-.entreprisesBg{
+.entreprisesBg {
     background: url(../img/liste_bg.jpg) 0 58% no-repeat;
 }
 
-.legalBg{
+.legalBg {
     background: url(../img/legal_bg.jpg) 0 58% no-repeat;
 }
 
-.agendaBg{
+.agendaBg {
     background: url(../img/agenda_bg.jpg) 0 58% no-repeat;
 }
 
-#titleDeco{
-  border-bottom: 2px solid grey;
-  width: 350px;
-  margin: auto;
-  margin-bottom: 40px;
+#titleDeco {
+    border-bottom: 2px solid grey;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
-#titleDecoForm{
-  width: 150px;
-  height: 3px;
-  background-color: #f64c10;
-  margin: auto;
+#titleDecoForm {
+    width: 150px;
+    height: 3px;
+    background-color: #f64c10;
+    margin: auto;
 }
 
-.businessPresentation{
-  overflow: hidden;
+.businessPresentation {
+    overflow: hidden;
     margin-top: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
 }
 
-.knowMore{
-  margin-top: 30px;
+.knowMore {
+    margin-top: 30px;
 }
 
-.headerBusiness{
-  overflow: hidden;
-  clear: both;
-}
-
-#main{
-  padding: 0 20px;
+.headerBusiness {
     overflow: hidden;
     clear: both;
 }
 
-.titleLeft{
-  float: left;
+#main {
+    padding: 0 20px;
+    overflow: hidden;
+    clear: both;
 }
 
-.jobOffer{
-  float: right;
-  text-align: right;
+.titleLeft {
+    float: left;
 }
 
-.jobOffer a{
-  color: #666;
-  transition: color 0.5s;
+.jobOffer {
+    float: right;
+    text-align: right;
 }
 
-.jobOffer a:hover{
-  color: #282e5c;
-  transition: color 0.5s;
+.jobOffer a {
+    color: #666;
+    transition: color 0.5s;
 }
 
-.btn{
-  margin: 0;
+.jobOffer a:hover {
+    color: #282e5c;
+    transition: color 0.5s;
 }
 
-.btn-primary{
-  background-color: #fff;
-  color: #f64c10;
-  border: 1px solid #f64c10;
-  transition: color 0.4s;
-  transition: border 0.5s;
-  sition: background-color 0.5s;
+.btn {
+    margin: 0;
 }
 
-.btn-primary:hover{
-  color: #fff;;
-  border: 1px solid #282e5c;
-  background-color: #282e5c;
-  transition: color 0.4s;
-  transition: border 0.5s;
-  transition: background-color 0.5s;
+.btn-primary {
+    background-color: #fff;
+    color: #f64c10;
+    border: 1px solid #f64c10;
+    transition: color 0.4s;
+    transition: border 0.5s;
+    sition: background-color 0.5s;
 }
 
-.img-responsive{
-  width: 100%;
-  margin-bottom: 30px;
+.btn-primary:hover {
+    color: #fff;;
+    border: 1px solid #282e5c;
+    background-color: #282e5c;
+    transition: color 0.4s;
+    transition: border 0.5s;
+    transition: background-color 0.5s;
 }
 
-.agendaCell .img-responsive{
-  margin-bottom: 10px;
+.img-responsive {
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-.agendaCell{
-  background-color: #e3e3e3;
-  text-align: center;
-  position: relative;
-  margin-bottom: 50px;
+.agendaCell .img-responsive {
+    margin-bottom: 10px;
 }
 
-.dateCell{
-  position: absolute;
-  top:5px;
-  left:5px;
-  background-color: #2e6da4;
-  padding: 15px;
-  color: white;
+.agendaCell {
+    background-color: #e3e3e3;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
 }
 
-.agendaCellTxt{
-  padding:0 10px 20px 10px;
+.agendaCellIndex {
+    background-color: #f64c10;
+    padding: 20px;
+    border: 1px solid #f64c10;
+    border-radius: 15px;
+    margin-bottom: 40px;
 }
 
-.agendaCell h4{
-  margin: 20px 0;
+#indexAgenda{
+    padding-bottom:150px;
+    color:#fff;
+    text-align: center;
 }
 
-.agendaCell p{
-  margin-bottom: 20px;
+.dateCell {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #2e6da4;
+    padding: 15px;
+    color: white;
+}
+
+.agendaCellTxt {
+    padding: 0 10px 20px 10px;
+}
+
+.agendaCell h4 {
+    margin: 20px 0;
+}
+
+.agendaCell p {
+    margin-bottom: 20px;
 }
 
 /* CSS FOOTER*/
 
-footer{
-  background-color: #333;
-  color: #fff;
-  padding: 60px 0 30px 0;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px 0;
 }
 
-#footerMenu ul{
-  list-style-type: none;
-  margin: 0 0 30px 0;
-  padding: 0;
+footer h4{
+    margin-top: 0;
 }
 
-#footerMenu ul li{
-  padding: 8px 0;
+footer .btn-primary{
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
 }
 
-#footerMenu ul li a{
-  color: #fff;
-  transition: color 0.5s;
+footer .btn-primary:hover{
+    background-color: #f64c10;
 }
 
-#footerMenu ul li a:hover{
-  color: #fb6d3b;
-  transition: color 0.5s;
+#footerMenu ul {
+    list-style-type: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+#footerMenu ul li {
+    padding: 8px 0;
+}
+
+#footerMenu ul li a {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+#footerMenu ul li a:hover {
+    color: #fb6d3b;
+    transition: color 0.5s;
 }
 
 /*  CSS SPECIAUX (marges, paddings etc...)  */
 
-.no-padding{
-  padding: 0;
+.no-padding {
+    padding: 0;
 }
 
-.float-right{
-  float: right;
+.float-right {
+    float: right;
 }
-
 
 /* MEDIAS QUERIES  */
 
 @media (min-width: 768px) {
 
-  .navbar-nav>li>a{
-    padding-top:10px;
-    padding-bottom:10px;
-  }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
 }
 
 @media (max-width: 992px) {
 
-  .jobOffer{
-    float: left;
-    text-align: left;
-    margin-bottom: 30px;
-  }
+    .jobOffer {
+        float: left;
+        text-align: left;
+        margin-bottom: 30px;
+    }
 
 }
 
 @media (max-width: 768px) {
 
-  .navbar-default .navbar-nav>.active>a{
-    border-width: 0;
-    border-radius: 0;
-  }
+    .navbar-default .navbar-nav > .active > a {
+        border-width: 0;
+        border-radius: 0;
+    }
 
-  #titleDeco{
-    width: 300px;
-  }
+    #titleDeco {
+        width: 300px;
+    }
 
-  .jobOffer{
-    float: left;
-    text-align: left;
-    margin-bottom: 30px;
-  }
+    .jobOffer {
+        float: left;
+        text-align: left;
+        margin-bottom: 30px;
+    }
 
-  .btn-primary{
-    width: 100%;
-    height: 50px;
-  }
+    .btn-primary {
+        width: 100%;
+        height: 50px;
+    }
 
-  #main{
-    padding: 0;
-  }
+    #main {
+        padding: 0;
+    }
 
-  h2{
-    margin-top: 30px;
-    padding-top: 0;
-  }
+    section{
+        margin-top: 0px;
+        padding-bottom: 40px;
+    }
 
-  body{
-    background-color: #fff;
-  }
+    body {
+        background-color: #fff;
+    }
 
 }
