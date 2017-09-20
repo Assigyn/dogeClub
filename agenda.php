@@ -32,12 +32,13 @@ include('header.php');
                 <div class="col-md-4 col-sm-6">
                     <div class="agendaCell">
                         <div class="agendaCellImage">
-                            <div class="dateCell"><h5>21/09/2018</h5></div>
-                            <img src="img/pingpong.jpg" class="img-responsive" alt="kayak">
+                            <div class="dateCell"><h5>19/09/2017</h5></div>
+                            <img src="img/agenda_kayak.jpg" class="img-responsive" alt="image 1080 kayak">
                         </div>
                         <div class="agendaCellTxt">
-                            <h4>Concours de ping-pong</h4>
-                            <p>Un tournoi jusqu'à la mort !</p>
+                            <h4>Meet-up de Kayak Communication</h4>
+                            <p>Kayak communications organise un meet-up sur l'innovation ce mardi 19 Septembre 2016 dans les locaux
+                            de la WildcodeSchool Lille.</p>
                             <button class="btn btn-primary">Découvrir</button>
                         </div>
                     </div>
@@ -46,12 +47,12 @@ include('header.php');
                 <div class="col-md-4 col-sm-6">
                     <div class="agendaCell">
                         <div class="agendaCellImage">
-                            <div class="dateCell"><h5>21/09/2018</h5></div>
-                            <img src="img/pingpong.jpg" class="img-responsive" alt="kayak">
+                            <div class="dateCell"><h5>12/09/2017</h5></div>
+                            <img src="img/news_apero.jpg" class="img-responsive" alt="photo fête">
                         </div>
                         <div class="agendaCellTxt">
-                            <h4>Concours de ping-pong</h4>
-                            <p>Un tournoi jusqu'à la mort !</p>
+                            <h4>Apéro de rencontre organisé par le Doge Club </h4>
+                            <p>Venez faire plus ample connaissance avec les autres entreprises des locaux.</p>
                             <button class="btn btn-primary">Découvrir</button>
                         </div>
                     </div>
@@ -60,12 +61,51 @@ include('header.php');
                 <div class="col-md-4 col-sm-6">
                     <div class="agendaCell">
                         <div class="agendaCellImage">
-                            <div class="dateCell"><h5>21/09/2018</h5></div>
-                            <img src="img/pingpong.jpg" class="img-responsive" alt="kayak">
+                            <div class="dateCell"><h5>07/09/2017</h5></div>
+                            <img src="img/news_badminton.jpg" class="img-responsive" alt="photo volant&raquette badminton">
                         </div>
                         <div class="agendaCellTxt">
-                            <h4>Concours de ping-pong</h4>
-                            <p>Un tournoi jusqu'à la mort !</p>
+                            <h4>Tournoi badminton - 4e journée!</h4>
+                            <p>Drawer vs Adista et Homido vs effiPilot</p>
+                            <button class="btn btn-primary">Découvrir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="agendaCell">
+                        <div class="agendaCellImage">
+                            <div class="dateCell"><h5>05/09/2017</h5></div>
+                            <img src="img/news_badminton.jpg" class="img-responsive" alt="photo volant&raquette badminton">
+                        </div>
+                        <div class="agendaCellTxt">
+                            <h4>Tournoi badminton - 3e journée!</h4>
+                            <p>WildCodeSchool vs Soft Computing et Axellience vs Allianzes</p>
+                            <button class="btn btn-primary">Découvrir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="agendaCell">
+                        <div class="agendaCellImage">
+                            <div class="dateCell"><h5>31/08/2017</h5></div>
+                            <img src="img/news_badminton.jpg" class="img-responsive" alt="photo volant&raquette badminton">
+                        </div>
+                        <div class="agendaCellTxt">
+                            <h4>Tournoi badminton - 2e journée!</h4>
+                            <p>KaliCustomer vs Le Village by CA et Le Wagon vs Picto Travel</p>
+                            <button class="btn btn-primary">Découvrir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="agendaCell">
+                        <div class="agendaCellImage">
+                            <div class="dateCell"><h5>29/08/2017</h5></div>
+                            <img src="img/news_badminton.jpg" class="img-responsive" alt="photo volant&raquette badminton">
+                        </div>
+                        <div class="agendaCellTxt">
+                            <h4>Tournoi badminton - 1e journée!</h4>
+                            <p>Giroptic vs Critizr et Itelios vs Kayak</p>
                             <button class="btn btn-primary">Découvrir</button>
                         </div>
                     </div>
@@ -73,51 +113,6 @@ include('header.php');
 
             </div>
 
-            <div class="row">
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="agendaCell">
-                        <div class="agendaCellImage">
-                            <div class="dateCell"><h5>21/09/2018</h5></div>
-                            <img src="img/pingpong.jpg" class="img-responsive" alt="kayak">
-                        </div>
-                        <div class="agendaCellTxt">
-                            <h4>Concours de ping-pong</h4>
-                            <p>Un tournoi jusqu'à la mort !</p>
-                            <button class="btn btn-primary">Découvrir</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="agendaCell">
-                        <div class="agendaCellImage">
-                            <div class="dateCell"><h5>21/09/2018</h5></div>
-                            <img src="img/pingpong.jpg" class="img-responsive" alt="kayak">
-                        </div>
-                        <div class="agendaCellTxt">
-                            <h4>Concours de ping-pong</h4>
-                            <p>Un tournoi jusqu'à la mort !</p>
-                            <button class="btn btn-primary">Découvrir</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="agendaCell">
-                        <div class="agendaCellImage">
-                            <div class="dateCell"><h5>21/09/2018</h5></div>
-                            <img src="img/pingpong.jpg" class="img-responsive" alt="kayak">
-                        </div>
-                        <div class="agendaCellTxt">
-                            <h4>Concours de ping-pong</h4>
-                            <p>Un tournoi jusqu'à la mort !</p>
-                            <button class="btn btn-primary">Découvrir</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
 
         </div>
 

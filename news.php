@@ -28,20 +28,17 @@ include('header.php');
             <div class="row">
                 <div class="businessPresentation">
                     <div class="col-lg-3 col-sm-6">
-                        <img src="img/img.jpg" class="img-responsive" alt="img">
+                        <img src="img/news_kayak.jpg" class="img-responsive" alt="photo meet up">
                     </div>
                     <div class="col-lg-8 col-sm-6">
                         <div class="headerBusiness">
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
-                                <h3>Kayak Communication</h3>
+                                <h3>Premier meet-up de Kayak Communication</h3>
                             </div>
                         </div>
-                        <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
-                            communication
-                            interne à l’externe. Kayak communication répond aux attentes des marques régionales,
-                            nationales
-                            ou internationales
-                            à travers des prestations online et offline.
+                        <p>Ce mardi 19 Septembre 2016, Kayak Communication a effectué son premier meet-up
+                            d'une longue série dans le domaine du numérique. Habib Oualidi y a présenté le concept de
+                            "créer l'innovation" depuis les locaux de la WildCodeSchool Lille. #innovation #ptidej
                         </p>
                         <div class="knowMore">
                             <a href="#">> En savoir plus</a>
@@ -53,20 +50,17 @@ include('header.php');
             <div class="row">
                 <div class="businessPresentation">
                     <div class="col-lg-3 col-sm-6">
-                        <img src="img/img.jpg" class="img-responsive" alt="img">
+                        <img src="img/news_ak10.jpg" class="img-responsive" alt="photo bureau">
                     </div>
                     <div class="col-lg-8 col-sm-6">
                         <div class="headerBusiness">
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
-                                <h3>Kayak Communication</h3>
+                                <h3>Ak 10 arrive dans nos locaux</h3>
                             </div>
                         </div>
-                        <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
-                            communication
-                            interne à l’externe. Kayak communication répond aux attentes des marques régionales,
-                            nationales
-                            ou internationales
-                            à travers des prestations online et offline.
+                        <p>Ak10, nouvelle entreprise du numérique qui s'installe dans nos locaux. Leur mission :
+                            minimiser vos
+                            dépenses dans les goulags.
                         </p>
                         <div class="knowMore">
                             <a href="#">> En savoir plus</a>
@@ -78,20 +72,17 @@ include('header.php');
             <div class="row">
                 <div class="businessPresentation">
                     <div class="col-lg-3 col-sm-6">
-                        <img src="img/img.jpg" class="img-responsive" alt="img">
+                        <img src="img/news_apero.jpg" class="img-responsive" alt="photo fête">
                     </div>
                     <div class="col-lg-8 col-sm-6">
                         <div class="headerBusiness">
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
-                                <h3>Kayak Communication</h3>
+                                <h3>Retour sur l'apéro du 12 Septembre 2016</h3>
                             </div>
                         </div>
-                        <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
-                            communication
-                            interne à l’externe. Kayak communication répond aux attentes des marques régionales,
-                            nationales
-                            ou internationales
-                            à travers des prestations online et offline.
+                        <p>Le Doge Club a organisé ce mardi 12 Septembre 2016 un apéro pour que toutes les entreprises
+                            des locaux A et B
+                            fassent plus ample connaissance. #réseau #party
                         </p>
                         <div class="knowMore">
                             <a href="#">> En savoir plus</a>
@@ -103,20 +94,15 @@ include('header.php');
             <div class="row">
                 <div class="businessPresentation">
                     <div class="col-lg-3 col-sm-6">
-                        <img src="img/img.jpg" class="img-responsive" alt="img">
+                        <img src="img/news_badminton.jpg" class="img-responsive" alt="photo volant&raquette badminton">
                     </div>
                     <div class="col-lg-8 col-sm-6">
                         <div class="headerBusiness">
                             <div class="titleLeft col-md-9 col-sm-12 col-xs-12 no-padding">
-                                <h3>Kayak Communication</h3>
+                                <h3>Résultat de la 4e journée du tournoi de badminton inter-entreprises</h3>
                             </div>
                         </div>
-                        <p>25 ans d’expertise, d’attention et de créativité, de la stratégie à l’opérationnel et de la
-                            communication
-                            interne à l’externe. Kayak communication répond aux attentes des marques régionales,
-                            nationales
-                            ou internationales
-                            à travers des prestations online et offline.
+                        <p>Le Doge Club a mis en ligne les résultats de la dernière journée du tournoi de badminton.
                         </p>
                         <div class="knowMore">
                             <a href="#">> En savoir plus</a>
@@ -129,7 +115,8 @@ include('header.php');
         </div>
 
         <div id="twitterPart" class="col-lg-3 col-md-4 hidden-xs visible-md visible-lg">
-            <a class="twitter-timeline" data-height="800" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
+            <a class="twitter-timeline" data-height="800" href="https://twitter.com/kayakcom">Tweets de Kayak
+                Communication</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
