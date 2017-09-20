@@ -8,7 +8,6 @@ include('header.php');
 <!--<div id="BgHeader" class="entreprisesBg">
 </div>-->
 
-</div> <!-- End of fluid-container -->
 
 <div id="videoBlock" style="width: 100%; height: 500px;" data-vide-bg="video/ocean"
      data-vide-options="position: 0% 50%">
@@ -24,8 +23,8 @@ include('header.php');
         <div class="row">
             <div class="col-xs-12">
                 <h2>Qui sommes-nous ?</h2>
-                <div id="titleDeco">
-                    <div id="titleDecoForm">
+                <div class="titleDeco">
+                    <div class="titleDecoForm">
                     </div>
                 </div>
             </div>
@@ -68,8 +67,8 @@ include('header.php');
     <div class="row">
         <div class="col-xs-12">
             <h2>Dernières actualités</h2>
-            <div id="titleDeco">
-                <div id="titleDecoForm">
+            <div class="titleDeco">
+                <div class="titleDecoForm">
                 </div>
             </div>
         </div>
@@ -133,8 +132,8 @@ include('header.php');
     <div class="row">
         <div class="col-xs-12">
             <h2>Evénements à venir !</h2>
-            <div id="titleDeco">
-                <div id="titleDecoForm">
+            <div class="titleDeco">
+                <div class="titleDecoForm">
                 </div>
             </div>
         </div>

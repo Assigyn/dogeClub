@@ -5,11 +5,8 @@ include('header.php');
 ?>
 
 
-<div id="BgHeader" class="galleryBg">
+<div id="bgHeader" class="galleryBg">
 </div>
-
-</div>
-
 
 <div class="container">
 
@@ -18,8 +15,8 @@ include('header.php');
         <div class="row">
             <div class="col-xs-12">
                 <h2>Galerie de Photos</h2>
-                <div id="titleDeco">
-                    <div id="titleDecoForm">
+                <div class="titleDeco">
+                    <div class="titleDecoForm">
                     </div>
                 </div>
             </div>

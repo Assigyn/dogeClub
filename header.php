@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title><?php echo $titlePage; ?></title>
+    <title>Doge Club - <?php echo $titlePage; ?></title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/format.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 <div class="container-fluid no-padding">
 
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.php">
-                        <img alt="Brand" src="brand">
+
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">

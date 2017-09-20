@@ -10,8 +10,18 @@ header {
     min-height: 60px;
 }
 
+.navbar-brand {
+    display: inline-block;
+    padding: 0;
+    background-image: url("../img/doge_logo.png");
+    width: 109px;
+    height: 42px;
+}
+
 .navbar-default {
     border-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 18px;
 }
 
 .navbar-default {
@@ -32,11 +42,25 @@ header {
     transition: background-color 0.5s;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: #f64c10;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f64c10;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
 .nav > li > a {
     padding: 10px 30px;
 }
 
-/*  CSS CONTENU  */
+/*  ----------CSS CONTENT----------  */
+
+/*Global font and elements*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -62,37 +86,6 @@ h4 {
     margin-top: 30px;
 }
 
-body {
-    background-color: #eee;
-}
-
-.bodyWhite {
-    background-color: #fff;
-}
-
-.greyBgIndex {
-    background-color: #eee;
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-.whiteBgIndex {
-    padding-top: 30px;
-}
-
-section {
-    background-color: white;
-    padding-bottom: 150px;
-    overflow: hidden;
-    margin-top: -40px;
-    padding-top: 25px;
-}
-
-section#indexPage {
-    margin-top: 20px;
-    padding-bottom: 30px;
-}
-
 p, ul {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5em;
@@ -100,82 +93,6 @@ p, ul {
 
 a {
     color: #fb6d3b;
-}
-
-#BgHeader {
-    height: 280px;
-    width: 100%;
-    background-size: cover;
-    padding: 0;
-    margin: 0;
-}
-
-.entreprisesBg {
-    background: url(../img/liste_bg.jpg) 0 58% no-repeat;
-}
-
-.legalBg {
-    background: url(../img/legal_bg.jpg) 0 58% no-repeat;
-}
-
-.agendaBg {
-    background: url(../img/agenda_bg.jpg) 0 58% no-repeat;
-}
-
-#titleDeco {
-    border-bottom: 2px solid grey;
-    width: 350px;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-#titleDecoForm {
-    width: 150px;
-    height: 3px;
-    background-color: #f64c10;
-    margin: auto;
-}
-
-.businessPresentation {
-    overflow: hidden;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #ccc;
-}
-
-.knowMore {
-    margin-top: 30px;
-}
-
-.headerBusiness {
-    overflow: hidden;
-    clear: both;
-}
-
-#main {
-    padding: 0 20px;
-    overflow: hidden;
-    clear: both;
-}
-
-.titleLeft {
-    float: left;
-}
-
-.jobOffer {
-    float: right;
-    text-align: right;
-}
-
-.jobOffer a {
-    color: #666;
-    transition: color 0.5s;
-}
-
-.jobOffer a:hover {
-    color: #282e5c;
-    transition: color 0.5s;
 }
 
 .btn {
@@ -205,6 +122,198 @@ a {
     margin-bottom: 30px;
 }
 
+/*Body*/
+
+body {
+    background-color: #eee;
+    margin-top: 66px;
+}
+
+.bodyWhite {
+    background-color: #fff;
+}
+
+.greyBgIndex {
+    background-color: #eee;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.whiteBgIndex {
+    padding-top: 30px;
+}
+
+/*header div with images*/
+
+#bgHeader {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.entreprisesBg {
+    background: url(../img/liste_bg.jpg) 0 58% no-repeat;
+}
+
+.legalBg {
+    background: url(../img/legal_bg.jpg) 0 58% no-repeat;
+}
+
+.agendaBg {
+    background: url(../img/agenda_bg.jpg) 0 58% no-repeat;
+}
+
+/*Video format*/
+
+#videoContainer {
+    height: 500px;
+    overflow: hidden;
+}
+
+#videoOver {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 150px;
+}
+
+.videoTitleDeco {
+    height: 1px;
+    margin: 50px auto;
+    width: 220px;
+    background-color: #fff;
+}
+
+/*Main div*/
+
+section {
+    background-color: white;
+    padding-bottom: 150px;
+    overflow: hidden;
+    margin-top: -40px;
+    padding-top: 25px;
+}
+
+section#indexPage {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+#main {
+    padding: 0 20px;
+    overflow: hidden;
+    clear: both;
+}
+
+/*Main title format*/
+
+.titleDeco {
+    border-bottom: 2px solid grey;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.titleDecoForm {
+    width: 150px;
+    height: 3px;
+    background-color: #f64c10;
+    margin: auto;
+}
+
+.businessPresentation {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* MODAL*/
+
+body.modal-open {
+    overflow: inherit;
+    padding-right: 0 !important;
+}
+
+.close {
+    color: #fb6d3b;;
+    font-size: 32px;
+    opacity: 1;
+}
+
+.modal-dialog {
+    width: 80% !important;
+}
+
+/*Business page format*/
+
+#businessContact {
+    background-color: #eee;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.businessContactButton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.businessContactButton button {
+    width: 200px;
+}
+
+#businessContact h5 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#businessContact ul {
+    margin-bottom: 20px;
+}
+
+#businessDescription {
+    padding: 30px 0 0 30px;
+}
+
+.knowMore {
+    margin-top: 30px;
+}
+
+.headerBusiness {
+    overflow: hidden;
+    clear: both;
+}
+
+.titleLeft {
+    float: left;
+}
+
+.jobOffer {
+    float: right;
+    text-align: right;
+}
+
+.jobOffer a {
+    color: #666;
+    transition: color 0.5s;
+    background: url("../img/suitcase.png") 0 50% no-repeat;
+    padding-left: 20px;
+}
+
+.jobOffer a:hover {
+    color: #282e5c;
+    background: url("../img/suitcase_hover.png") 0 50% no-repeat;
+    transition: color 0.5s;
+    transition: background 0.5s;
+}
+
+/*Agenda page format*/
+
 .agendaCell .img-responsive {
     margin-bottom: 10px;
 }
@@ -215,21 +324,21 @@ a {
     position: relative;
 }
 
-#indexAgenda{
+#indexAgenda {
     margin-bottom: 150px;
     text-align: center;
     color: #fff;
 }
 
-#indexAgenda p{
+#indexAgenda p {
     margin-bottom: 10px;
 }
 
-#indexAgenda h4{
-    margin:15px;
+#indexAgenda h4 {
+    margin: 15px;
 }
 
-#indexAgenda ul{
+#indexAgenda ul {
     list-style-type: none;
     list-style-position: inside;
     margin: 0;
@@ -237,29 +346,29 @@ a {
     background: url("../img/agenda_cell_bg.png") 50% 0 repeat-y;
 }
 
-#indexAgenda ul li{
+#indexAgenda ul li {
     background-color: #f64c10;
     width: 250px;
-    padding:8px;
+    padding: 8px;
     margin: 50px auto;
-    border:1px solid #f64c10;
+    border: 1px solid #f64c10;
     border-radius: 15px;
 }
 
-#indexAgenda ul li:hover{
+#indexAgenda ul li:hover {
     background-color: #282e5c;
-    border-color:#282e5c;
+    border-color: #282e5c;
 }
 
-#indexAgenda ul li a{
+#indexAgenda ul li a {
     display: inline-block;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     width: 100%;
     height: 100%;
 }
 
-#indexAgenda ul li a:hover{
+#indexAgenda ul li a:hover {
     text-decoration: none;
 }
 
@@ -270,6 +379,14 @@ a {
     background-color: #2e6da4;
     padding: 15px;
     color: white;
+}
+
+.dateCellModal {
+    margin-bottom: 40px;
+}
+
+.dateCellModal span {
+    color: #fb6d3b;
 }
 
 .agendaCellTxt {
@@ -288,7 +405,17 @@ a {
     margin-bottom: 20px;
 }
 
-/* CSS FOOTER*/
+/*Galery page format*/
+
+.modal-dialog {
+    width: 600px;
+}
+
+.thumbnail {
+    margin-bottom: 6px;
+}
+
+/* ---------- CSS FOOTER ---------- */
 
 footer {
     background-color: #333;
@@ -330,7 +457,7 @@ footer .btn-primary:hover {
     transition: color 0.5s;
 }
 
-/*  CSS SPECIAUX (marges, paddings etc...)  */
+/* ---------- CUSTOM ALIGN, PADDING, MARGIN ---------- */
 
 .no-padding {
     padding: 0;
@@ -340,8 +467,9 @@ footer .btn-primary:hover {
     float: right;
 }
 
-/* MEDIAS QUERIES  */
+/* ---------- MEDIAS QUERIES ----------  */
 
+/* ALl except mobile */
 @media (min-width: 768px) {
 
     .navbar-nav > li > a {
@@ -351,6 +479,7 @@ footer .btn-primary:hover {
 
 }
 
+/* All except large desktop*/
 @media (max-width: 992px) {
 
     .jobOffer {
@@ -361,6 +490,7 @@ footer .btn-primary:hover {
 
 }
 
+/*Mobile only*/
 @media (max-width: 768px) {
 
     .navbar-default .navbar-nav > .active > a {
@@ -396,45 +526,21 @@ footer .btn-primary:hover {
         background-color: #fff;
     }
 
-}
+    #businessDescription {
+        padding: 30px 0 0 0;
+    }
 
-#videoContainer{
-    height:500px;
-    overflow: hidden;
-}
+    .modal-dialog {
+        width: 100% !important;
+        margin: 0;
+    }
 
-#videoOver{
-    width:100%;
-    height:100%;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0,0,0,0.5);
-    padding-top: 150px;
-}
+    .businessContactButton button {
+        width: 100%;
+    }
 
-.videoTitleDeco{
-    height:1px;
-    margin: 50px auto;
-    width:220px;
-    background-color: #fff;
-}
+    .navbar-brand {
+        margin-left: 20px;
+    }
 
-h2, p {
-    text-align: center;
-}
-
-img {
-    text-align: center;
-}
-
-.row {
-    margin-top: 30px;
-}
-
-.modal-dialog {
-    width: 600px;
-}
-
-.thumbnail {
-    margin-bottom: 6px;
 }

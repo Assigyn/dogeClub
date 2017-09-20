@@ -31,12 +31,12 @@
                         <!-- Textarea -->
                         <div class="form-group">
                             <textarea class="form-control" id="Message" name="Message"
-                                      id="Text">Votre message...</textarea>
+                            >Votre message...</textarea>
                         </div>
 
                         <!-- Button -->
                         <div class="form-group">
-                            <button id="submit" name="submit" class="btn btn-primary">Envoyer</button>
+                            <button id="formSubmit" name="submit" class="btn btn-primary">Envoyer</button>
                         </div>
 
 
@@ -59,26 +59,70 @@
 
 <script>
     $(document).ready(function () {
-        $('.js-scrollTo').on('click', function () { // Au clic sur un élément
-            var page = $(this).attr('href'); // Page cible
-            var speed = 750; // Durée de l'animation (en ms)
-            $('html, body').animate({scrollTop: $(page).offset().top}, speed); // Go
+
+        var php_page = "<?php echo $currentPage; ?>";
+
+        //Video Background
+        if (php_page == "index") {
+            var videoBlock = $('#videoBlock');
+            videoBlock.vide('video/ocean'); // Non declarative initialization
+
+            var instance = videoBlock.data('vide'); // Get the instance
+            var video = instance.getVideoObject(); // Get the video object
+            instance.destroy(); // Destroy instance
+
+            videoBlock.vide({
+                'mp4': 'video/ocean',
+                'webm': 'video/ocean',
+                'ogv': 'video/ocean',
+                'poster': 'video/ocean',
+            });
+        }
+
+        //Smooth Scroll
+        $('.js-scrollTo').on('click', function () {
+            var page = $(this).attr('href');
+            var speed = 750;
+            $('html, body').animate({scrollTop: $(page).offset().top}, speed);
             return false;
         });
 
-        $('#videoBlock').vide('video/ocean'); // Non declarative initialization
+        //Navbar scroll
 
-        var instance = $('#videoBlock').data('vide'); // Get the instance
-        var video = instance.getVideoObject(); // Get the video object
-        instance.destroy(); // Destroy instance
-
-        $('#videoBlock').vide({
-            'mp4': 'video/ocean',
-            'webm': 'video/ocean',
-            'ogv': 'video/ocean',
-            'poster': 'video/ocean',
+        $(window).on("scroll", function () {
+            var changeColor = $(window).scrollTop();
+            if (changeColor > 120) {
+                $(".navbar-default").css({
+                    'background-color': '#333',
+                    'transition': 'background-color 0.5s'
+                });
+                $(".navbar-default a").css({
+                    'color': '#fff'
+                });
+                $(".navbar-brand").css({
+                    'background-image': 'url(img/doge_logo_white.png)'
+                });
+            }
+            else {
+                $(".navbar-default").css("background", "#fff");
+                $(".navbar-default a").css({
+                    'color': '#777'
+                });
+                $(".navbar-default li.active a").css({
+                    'color': '#fff'
+                });
+                $(".navbar-brand").css({
+                    'background-image': 'url(img/doge_logo.png)'
+                });
+            }
         });
 
+
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+
+        //Lightbox
         var $lightbox = $('#lightbox');
 
         $('[data-target="#lightbox"]').on('click', function (event) {
@@ -96,6 +140,7 @@
             $lightbox.find('img').css(css);
         });
 
+
         $lightbox.on('shown.bs.modal', function (e) {
             var $img = $lightbox.find('img');
 
@@ -103,7 +148,8 @@
             $lightbox.find('.close').removeClass('hidden');
         });
 
-    });
+    })
+
 </script>
 
 
