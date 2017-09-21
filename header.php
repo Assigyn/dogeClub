@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Wild Code School, équipe 3">
+    <meta name="description" content="<?php echo $pageDescription; ?>">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Doge Club - <?php echo $titlePage; ?></title>
     <!-- Bootstrap -->
@@ -25,7 +27,7 @@
 <div class="container-fluid no-padding">
 
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top compensate-for-scrollbar">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"

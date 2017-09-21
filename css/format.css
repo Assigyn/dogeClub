@@ -165,6 +165,14 @@ body {
     background: url(../img/agenda_bg.jpg) 0 58% no-repeat;
 }
 
+.galleryBg {
+    background: url(../img/gallery_bg.jpg) 0 75% no-repeat;
+}
+
+.newsBg {
+    background: url(../img/news_bg.jpg) 0 58% no-repeat;
+}
+
 /*Video format*/
 
 #videoContainer {
@@ -177,7 +185,7 @@ body {
     height: 100%;
     text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding-top: 150px;
 }
 
@@ -267,7 +275,7 @@ body.modal-open {
 
 /*Business page format*/
 
-#businessContact {
+.businessContact {
     background-color: #eee;
     padding: 30px;
     overflow: hidden;
@@ -291,7 +299,7 @@ body.modal-open {
     margin-bottom: 20px;
 }
 
-#businessDescription {
+.businessDescription {
     padding: 30px 0 0 30px;
 }
 
@@ -561,6 +569,14 @@ footer .btn-primary:hover {
 
     body {
         background-color: #fff;
+    }
+
+    #bgHeader {
+        height: 150px;
+        width: 100%;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
     }
 
     #businessDescription {

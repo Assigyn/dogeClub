@@ -1,10 +1,11 @@
 <?php
 $currentPage = "news";
 $titlePage = "Les actualités";
+$pageDescription = "Page dédiée aux actualités";
 include('header.php');
 ?>
 
-<div id="bgHeader" class="entreprisesBg">
+<div id="bgHeader" class="newsBg">
 </div>
 
 <div class="container">
@@ -52,31 +53,20 @@ include('header.php');
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">
+                                            <h4 class="modal-title">
                                                 Premier meet-up de Kayak Communication
                                             </h4>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <div id="businessContact">
-                                                        <div class="col-xs-12 col-sm-6 col-md-12"><img
-                                                                    src="img/kayak.png" class="img-responsive"
-                                                                    alt="kayak_logo"></div>
+                                                <div class="col-md-6">
+                                                    <div class="businessContact">
                                                         <div class="col-xs-12 col-sm-6 col-md-12">
-                                                            <ul>
-                                                                <li>Batîment A, 3ème étage, porte 2</li>
-                                                                <li>03 20 35 12 41</li>
-                                                                <li><a>https://kayakcommunication.fr/</a></li>
-                                                            </ul>
-                                                            <div class="businessContactButton">
-                                                                <button class="btn btn-primary">Contacter</button>
-                                                            </div>
-                                                        </div>
+                                                            <img src="img/kayak.png" class="img-responsive" alt="kayak_logo"></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-8">
-                                                    <div id="businessDescription">
+                                                <div class="col-md-6">
+                                                    <div class="businessDescription">
                                                         <p>"Ce mardi 19 Septembre 2016, Kayak Communication a effectué
                                                             son premier meet-up d'une longue série dans le domaine du
                                                             numérique. Habib Oualidi y a présenté le concept de "créer
@@ -111,7 +101,46 @@ include('header.php');
                             dépenses dans les goulags.
                         </p>
                         <div class="knowMore">
-                            <a href="#">> En savoir plus</a>
+                            <!-- Button trigger modal -->
+                            <a data-toggle="modal" href="#modalAK">
+                                > En savoir plus
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalAK" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">
+                                                Premier meet-up de Kayak Communication
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="businessContact">
+                                                        <div class="col-xs-12 col-sm-6 col-md-12">
+                                                            <img src="img/kayak.png" class="img-responsive" alt="kayak_logo"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="businessDescription">
+                                                        <p>"Ce mardi 19 Septembre 2016, Kayak Communication a effectué
+                                                            son premier meet-up d'une longue série dans le domaine du
+                                                            numérique. Habib Oualidi y a présenté le concept de "créer
+                                                            l'innovation" depuis les locaux de la WildCodeSchool Lille.
+                                                            #innovation #ptidej
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,7 +162,46 @@ include('header.php');
                             fassent plus ample connaissance. #réseau #party
                         </p>
                         <div class="knowMore">
-                            <a href="#">> En savoir plus</a>
+                            <!-- Button trigger modal -->
+                            <a data-toggle="modal" href="#modalApero">
+                                > En savoir plus
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalApero" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">
+                                                Premier meet-up de Kayak Communication
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="businessContact">
+                                                        <div class="col-xs-12 col-sm-6 col-md-12">
+                                                            <img src="img/kayak.png" class="img-responsive" alt="kayak_logo"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="businessDescription">
+                                                        <p>"Ce mardi 19 Septembre 2016, Kayak Communication a effectué
+                                                            son premier meet-up d'une longue série dans le domaine du
+                                                            numérique. Habib Oualidi y a présenté le concept de "créer
+                                                            l'innovation" depuis les locaux de la WildCodeSchool Lille.
+                                                            #innovation #ptidej
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,7 +221,46 @@ include('header.php');
                         <p>Le Doge Club a mis en ligne les résultats de la dernière journée du tournoi de badminton.
                         </p>
                         <div class="knowMore">
-                            <a href="#">> En savoir plus</a>
+                            <!-- Button trigger modal -->
+                            <a data-toggle="modal" href="#modalBad4">
+                                > En savoir plus
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalBad4" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">
+                                                Premier meet-up de Kayak Communication
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="businessContact">
+                                                        <div class="col-xs-12 col-sm-6 col-md-12">
+                                                            <img src="img/kayak.png" class="img-responsive" alt="kayak_logo"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="businessDescription">
+                                                        <p>"Ce mardi 19 Septembre 2016, Kayak Communication a effectué
+                                                            son premier meet-up d'une longue série dans le domaine du
+                                                            numérique. Habib Oualidi y a présenté le concept de "créer
+                                                            l'innovation" depuis les locaux de la WildCodeSchool Lille.
+                                                            #innovation #ptidej
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

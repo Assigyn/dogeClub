@@ -1,6 +1,7 @@
 <?php
-$titlePage = "Le Club Doge vous souhaite la bienvenue";
+$titlePage = "Le Doge Club vous souhaite la bienvenue";
 $currentPage = "index";
+$pageDescription = "La page principale du site";
 include('header.php');
 ?>
 
@@ -13,7 +14,7 @@ include('header.php');
      data-vide-options="position: 0% 50%">
     <div id="videoOver"><h1>Notre diversité fait notre unité</h1>
         <div class="videoTitleDeco"></div>
-        <h3>Le club Doge, fédérateur des entreprises du numérique</h3></div>
+        <h3>Le Doge Club, fédérateur des entreprises du numérique</h3></div>
 </div>
 
 <div class="container">
@@ -79,8 +80,7 @@ include('header.php');
                     <a href="#">Premier meet-up de Kayak Communication</a>
                 </h3>
                 <p>Ce mardi 19 Septembre 2016, Kayak Communication a effectué son premier meet-up
-                    d'une longue série dans le domaine du numérique. Habib Oualidi y a présenté le concept de
-                    "créer l'innovation" depuis les locaux de la WildCodeSchool Lille. #innovation #ptidej
+                    d'une longue série dans le domaine du numérique....
                 </p>
                 <button class="btn btn-primary">
                     Lire la suite
@@ -92,11 +92,10 @@ include('header.php');
                     <img class="img-responsive" src="img/news_ak10.jpg" alt="photo bureau">
                 </a>
                 <h3>
-                    <a href="#">Ak 10 arrive dans nos locaux</a>
+                    <a href="#">La société Ak 10 arrive dans nos locaux</a>
                 </h3>
                 <p>Ak10, nouvelle entreprise du numérique qui s'installe dans nos locaux. Leur mission :
-                    minimiser vos
-                    dépenses dans les goulags.
+                    minimiser vos dépenses dans les goulags.
                 </p>
                 <button class="btn btn-primary">
                     Lire la suite
@@ -111,8 +110,7 @@ include('header.php');
                     <a href="#">Retour sur l'apéro du 12 Septembre 2016</a>
                 </h3>
                 <p>Le Doge Club a organisé ce mardi 12 Septembre 2016 un apéro pour que toutes les entreprises
-                    des locaux A et B
-                    fassent plus ample connaissance. #réseau #party
+                    des locaux A et B fassent plus ample connaissance.
                 </p>
                 <button class="btn btn-primary">
                     Lire la suite

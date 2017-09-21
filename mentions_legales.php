@@ -1,6 +1,6 @@
 <?php
-$currentPage = "news";
-$titlePage = "Les actualités";
+$titlePage = "mentions légales";
+$pageDescription = "Page des mentions légales";
 include('header.php');
 ?>
 
@@ -13,7 +13,7 @@ include('header.php');
 
         <div class="row">
             <div class="col-xs-12">
-                <h2>Les actualités</h2>
+                <h2>Mentions légales</h2>
                 <div class="titleDeco">
                     <div class="titleDecoForm">
                     </div>

@@ -118,7 +118,7 @@ if ($_POST) {
 
             </div>
             <div class="col-xs-12 visible-xs hidden-sm">
-                <p class="legalMentions"><a href="#">Mentions légales</a></p>
+                <p class="legalMentions"><a href="mentions_legales.php">Mentions légales</a></p>
             </div>
         </div>
     </div>
@@ -150,17 +150,16 @@ if ($_POST) {
         //Video Background
         if (php_page == "index") {
             var videoBlock = $('#videoBlock');
-            videoBlock.vide('video/ocean'); // Non declarative initialization
+            videoBlock.vide('video/videobg'); // Non declarative initialization
 
             var instance = videoBlock.data('vide'); // Get the instance
             var video = instance.getVideoObject(); // Get the video object
             instance.destroy(); // Destroy instance
 
             videoBlock.vide({
-                'mp4': 'video/ocean',
-                'webm': 'video/ocean',
-                'ogv': 'video/ocean',
-                'poster': 'video/ocean',
+                'mp4': 'video/videobg',
+                'ogv': 'video/videobg',
+                'poster': 'video/videobg',
             });
         }
 
@@ -202,11 +201,12 @@ if ($_POST) {
             }
         });
 
-
+        //mail modal
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').focus()
         });
 
+        //lightbox
         $("[data-fancybox]").fancybox({
             // Options will go here
         });
