@@ -1,47 +1,121 @@
+<?php
+
+$error = array();
+
+if ($_POST) {
+
+
+    if (empty($_POST['Name'])) {
+        $error['Name'] = "Vous devez renseigner un nom.";
+        $postForm = "false";
+    }
+
+
+    if (empty($_POST['Email'])) {
+        $error['Email'] = "Votre email n'est pas valide.";
+        $postForm = "false";
+    }
+
+    if (strlen($_POST['Message']) < 20) {
+        $error['Message'] = "Votre message doit contenir au moins 20 caractères.";
+        $postForm = "false";
+    }
+
+    if (count($error) == 0) {
+        $postForm = "true";
+        $_POST = array();
+    }
+
+}
+?>
+
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 hidden-xs" id="footerMenu">
                 <ul>
-                    <li><a href="#">Actualités</a></li>
-                    <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Entreprises</a></li>
-                    <li><a href="#">Galerie</a></li>
-                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="news.php">Actualités</a></li>
+                    <li><a href="agenda.php">Agenda</a></li>
+                    <li><a href="entreprises.php">Entreprises</a></li>
+                    <li><a href="galerie.php">Galerie</a></li>
+                    <li><a href="mentions_legales.php">Mentions légales</a></li>
                 </ul>
                 <p class="copyright">Doge Club (c) 2017</p>
             </div>
             <div class="col-lg-4 col-xs-12" id="form">
                 <h4 id="contact">Contactez nous !</h4>
-                <form class="form-horizontal">
+
+
+                <!-- Modal -->
+                <div class="modal fade sentMail" id="sentMail" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Votre message a bien été envoyé !</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                                        <img src="img/mail.png" alt="email sent" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                        <h3>Votre message a bien été envoyé, une réponse vous sera envoyée dès que
+                                            possible.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form action="index.php#submit" class="form-horizontal" method="POST">
                     <fieldset>
 
                         <!-- Text input-->
                         <div class="form-group">
                             <input id="Name" name="Name" placeholder="Votre nom...." class="form-control input-md"
-                                   type="text">
+                                   type="text" value="<?php echo isset($_POST["Name"]) ? $_POST["Name"] : ''; ?>">
+                            <p class="error_message"><?php if (isset($error['Name'])) {
+                                    echo $error['Name'];
+                                } ?></p>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
                             <input id="Email" name="Email" placeholder="Votre mail..." class="form-control input-md"
-                                   type="text">
+                                   type="email" value="<?php echo isset($_POST["Email"]) ? $_POST["Email"] : ''; ?>">
+                            <p class="error_message"><?php if (isset($error['Email'])) {
+                                    echo $error['Email'];
+                                } ?></p>
                         </div>
 
                         <!-- Textarea -->
                         <div class="form-group">
                             <textarea class="form-control" id="Message" name="Message"
-                            >Votre message...</textarea>
+                                      placeholder="Votre message..."><?php echo isset($_POST["Message"]) ? $_POST["Message"] : ''; ?></textarea>
+                            <p class="error_message"><?php if (isset($error['Message'])) {
+                                    echo $error['Message'];
+                                } ?></p>
                         </div>
 
                         <!-- Button -->
                         <div class="form-group">
-                            <button id="formSubmit" name="submit" class="btn btn-primary">Envoyer</button>
+                            <button id="submit" name="submit" class="btn btn-primary">
+                                Envoyer
+                            </button>
                         </div>
 
 
                     </fieldset>
                 </form>
+
             </div>
             <div class="col-xs-12 visible-xs hidden-sm">
                 <p class="legalMentions"><a href="#">Mentions légales</a></p>
@@ -50,17 +124,28 @@
     </div>
 </footer>
 
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.vide.js"></script>
+<?php if ($currentPage == 'index') { ?>
+    <script src="js/jquery.vide.js"></script>
+<?php } ?>
+<?php if ($currentPage == 'gallery') { ?>
+    <script src="js/jquery.fancybox.min.js"></script>
+<?php } ?>
 
 
 <script>
     $(document).ready(function () {
 
         var php_page = "<?php echo $currentPage; ?>";
+        var postForm = "<?php echo $postForm;?>";
+
+        if (postForm == 'true') {
+            $('#sentMail').modal('show');
+        }
 
         //Video Background
         if (php_page == "index") {
@@ -122,30 +207,8 @@
             $('#myInput').focus()
         });
 
-        //Lightbox
-        var $lightbox = $('#lightbox');
-
-        $('[data-target="#lightbox"]').on('click', function (event) {
-            var $img = $(this).find('img'),
-                src = $img.attr('src'),
-                alt = $img.attr('alt'),
-                css = {
-                    'maxWidth': $(window).width() - 100,
-                    'maxHeight': $(window).height() - 100
-                };
-
-            $lightbox.find('.close').addClass('hidden');
-            $lightbox.find('img').attr('src', src);
-            $lightbox.find('img').attr('alt', alt);
-            $lightbox.find('img').css(css);
-        });
-
-
-        $lightbox.on('shown.bs.modal', function (e) {
-            var $img = $lightbox.find('img');
-
-            $lightbox.find('.modal-dialog').css({'width': $img.width()});
-            $lightbox.find('.close').removeClass('hidden');
+        $("[data-fancybox]").fancybox({
+            // Options will go here
         });
 
     })

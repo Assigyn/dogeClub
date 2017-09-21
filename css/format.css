@@ -227,10 +227,25 @@ section#indexPage {
 
 .businessPresentation {
     overflow: hidden;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-bottom: 40px;
     border-bottom: 1px solid #ccc;
+}
+
+.businessPresentation img{
+    border: 1px solid #999;
+}
+
+/* FORM */
+
+.error_message{
+    color: #ff4242;
+    font-style: italic;
+}
+
+.sentMail{
+    color: #333333 !important;
 }
 
 /* MODAL*/
@@ -391,6 +406,7 @@ body.modal-open {
 
 .agendaCellTxt {
     padding: 0 10px 20px 10px;
+    height: 160px;
 }
 
 .agendaCell h4 {
@@ -421,6 +437,11 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 60px 0 30px 0;
+}
+
+.legalMentions{
+    text-align: center;
+    padding-top: 50px;
 }
 
 footer h4 {
@@ -493,9 +514,25 @@ footer .btn-primary:hover {
 /*Mobile only*/
 @media (max-width: 768px) {
 
+    .indexNews{
+        margin-bottom: 60px;
+    }
+
+    .indexNews button{
+        margin-top: 20px;
+    }
+
     .navbar-default .navbar-nav > .active > a {
         border-width: 0;
         border-radius: 0;
+    }
+
+    form{
+        padding: 0 20px;
+    }
+
+    #contact h4{
+        text-align: center;
     }
 
     #titleDeco {
@@ -544,3 +581,5 @@ footer .btn-primary:hover {
     }
 
 }
+
+

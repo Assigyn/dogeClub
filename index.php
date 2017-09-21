@@ -34,23 +34,16 @@ include('header.php');
 
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-1">
-                    <p>
-                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en
-                        page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis
-                        les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour
-                        réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq
-                        siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu
-                        n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles
-                        Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion
-                        dans des applications de mise en page de texte, comme Aldus PageMaker.
-                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en
-                        page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis
-                        les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour
-                        réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq
-                        siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu
-                        n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles
-                        Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion
-                        dans des applications de mise en page de texte, comme Aldus PageMaker.
+                    <p>Connaissez-vous Euratechnologies, cet écosystème digital avec 300 entreprises? Oui? Eh bien nous
+                        vous présentons son petit frère le Doge Club!
+                    </p>
+                    <p>Le Doge Club est une association créée par Kayak Communication
+                        qui regroupe toutes les entreprises du bâtiment A et B du 2 et 4 avenue des Saules
+                        à Lille juste derrière Euratechnologies.
+                    </p>
+                    <p>Notre but est de fédérer ces entreprises et de communiquer largement sur les activités qui y sont
+                        exercées.
+
                     </p>
                 </div>
             </div>
@@ -78,44 +71,49 @@ include('header.php');
 
         <div class="row">
 
-            <div class="col-md-4 ">
+            <div class="col-md-4 indexNews">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/140x160" alt="">
+                    <img class="img-responsive" src="img/news_kayak.jpg" alt="photo meet up">
                 </a>
                 <h3>
-                    <a href="#">Retour sur l'apéro</a>
+                    <a href="#">Premier meet-up de Kayak Communication</a>
                 </h3>
-                <p>Une première rencontre a eu lieu entre les différentes entreprises du Doge. Retour sur ce
-                    début de soirée amical qui s'est déroulé à merveille.</p>
+                <p>Ce mardi 19 Septembre 2016, Kayak Communication a effectué son premier meet-up
+                    d'une longue série dans le domaine du numérique. Habib Oualidi y a présenté le concept de
+                    "créer l'innovation" depuis les locaux de la WildCodeSchool Lille. #innovation #ptidej
+                </p>
                 <button class="btn btn-primary">
                     Lire la suite
                 </button>
             </div>
 
-            <div class="col-md-4 ">
+            <div class="col-md-4 indexNews">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/140x160" alt="">
+                    <img class="img-responsive" src="img/news_ak10.jpg" alt="photo bureau">
                 </a>
                 <h3>
-                    <a href="#">Nouveautés: des lunettes pour smartphones</a>
+                    <a href="#">Ak 10 arrive dans nos locaux</a>
                 </h3>
-                <p>Vous connaissez tous maintenant les célèbres casques VR ? L'entreprise Homido nous a offert
-                    un de leur produit qu'ils fabriquent: des lunettes de réalités virtuelles pour
-                    smartphones </p>
+                <p>Ak10, nouvelle entreprise du numérique qui s'installe dans nos locaux. Leur mission :
+                    minimiser vos
+                    dépenses dans les goulags.
+                </p>
                 <button class="btn btn-primary">
                     Lire la suite
                 </button>
             </div>
 
-            <div class="col-md-4 ">
+            <div class="col-md-4 indexNews">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/140x160" alt="">
+                    <img class="img-responsive" src="img/news_apero.jpg" alt="photo fête">
                 </a>
                 <h3>
-                    <a href="#">Intégration réussie pour les Wilders</a>
+                    <a href="#">Retour sur l'apéro du 12 Septembre 2016</a>
                 </h3>
-                <p>Une dizaine de nouveaux élèves ont intégré et ouvert la 1ère session de la Wild Code School,
-                    une nouveau type de formation qui existe déjà dans 8 villes en France </p>
+                <p>Le Doge Club a organisé ce mardi 12 Septembre 2016 un apéro pour que toutes les entreprises
+                    des locaux A et B
+                    fassent plus ample connaissance. #réseau #party
+                </p>
                 <button class="btn btn-primary">
                     Lire la suite
                 </button>
@@ -144,18 +142,20 @@ include('header.php');
             <div class="col-lg-12">
                 <ul>
                     <li>
-                        <a href="#"><h4>21/09/2018</h4>
-                            <p>Tournoi de ping pong</p>
+                        <a href="#">
+                            <h5>19/09/2017</h5>
+                            <p>Meet-up de Kayak Communication</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><h4>21/09/2018</h4>
-                            <p>Tournoi de ping pong</p>
+                        <a href="#">
+                            <h5>12/09/2017</h5>
+                            <p>Apéro de rencontre organisé par le Doge Club</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><h4>21/09/2018</h4>
-                            <p>Tournoi de ping pong</p>
+                        <a href="#"><h5>07/09/2017</h5>
+                            <p>Tournoi badminton - 4e journée!</p>
                         </a>
                     </li>
                 </ul>
