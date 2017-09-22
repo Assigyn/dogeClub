@@ -1,0 +1,608 @@
+/*  CSS HEADER ET NAV  */
+
+header {
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.navbar {
+    margin: 0;
+    min-height: 60px;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding: 0;
+    background-image: url("../img/doge_logo.png");
+    width: 109px;
+    height: 42px;
+}
+
+.navbar-default {
+    border-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: #FF622A;
+    color: #fff;
+    border-width: 1px;
+    border-radius: 20px;
+    transition: background-color 0.5s;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #282e5c;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f64c10;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f64c10;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.nav > li > a {
+    padding: 10px 30px;
+}
+
+/*  ----------CSS CONTENT----------  */
+
+/*Global font and elements*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* margin-top: -30px;
+     padding-top: 40px;
+     background-color: white;*/
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+p, ul {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+}
+
+a {
+    color: #fb6d3b;
+}
+
+.btn {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #f64c10;
+    border: 1px solid #f64c10;
+    transition: color 0.4s;
+    transition: border 0.5s;
+    sition: background-color 0.5s;
+}
+
+.btn-primary:hover {
+    color: #fff;;
+    border: 1px solid #282e5c;
+    background-color: #282e5c;
+    transition: color 0.4s;
+    transition: border 0.5s;
+    transition: background-color 0.5s;
+}
+
+.img-responsive {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*Body*/
+
+body {
+    background-color: #eee;
+    margin-top: 66px;
+}
+
+.bodyWhite {
+    background-color: #fff;
+}
+
+.greyBgIndex {
+    background-color: #eee;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.whiteBgIndex {
+    padding-top: 30px;
+}
+
+/*header div with images*/
+
+#bgHeader {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.entreprisesBg {
+    background: url(../img/liste_bg.jpg) 0 58% no-repeat;
+}
+
+.legalBg {
+    background: url(../img/legal_bg.jpg) 0 58% no-repeat;
+}
+
+.agendaBg {
+    background: url(../img/agenda_bg.jpg) 0 58% no-repeat;
+}
+
+.galleryBg {
+    background: url(../img/gallery_bg.jpg) 0 75% no-repeat;
+}
+
+.newsBg {
+    background: url(../img/news_bg.jpg) 0 58% no-repeat;
+}
+
+/*Video format*/
+
+#videoContainer {
+    height: 500px;
+    overflow: hidden;
+}
+
+#videoOver, #videoOverXs {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 150px;
+}
+
+.videoTitleDeco {
+    height: 1px;
+    margin: 50px auto;
+    width: 220px;
+    background-color: #fff;
+}
+
+.mobilevideo{
+    padding: 20px;
+    padding-top: 80px !important;
+    background: url("../video/videobg.jpg") 0 0 no-repeat;
+    background-size:cover;
+}
+
+/*Main div*/
+
+section {
+    background-color: white;
+    padding-bottom: 150px;
+    overflow: hidden;
+    margin-top: -40px;
+    padding-top: 25px;
+}
+
+section#indexPage {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+#main {
+    padding: 0 20px;
+    overflow: hidden;
+    clear: both;
+}
+
+/*Main title format*/
+
+.titleDeco {
+    border-bottom: 2px solid grey;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.titleDecoForm {
+    width: 150px;
+    height: 3px;
+    background-color: #f64c10;
+    margin: auto;
+}
+
+.businessPresentation {
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.businessPresentation img{
+    border: 1px solid #999;
+}
+
+/* FORM */
+
+.error_message{
+    color: #ff4242;
+    font-style: italic;
+}
+
+.sentMail{
+    color: #333333 !important;
+}
+
+/* MODAL*/
+
+body.modal-open {
+    overflow: inherit;
+    padding-right: 0 !important;
+}
+
+.close {
+    color: #fb6d3b;;
+    font-size: 32px;
+    opacity: 1;
+}
+
+.modal-dialog {
+    width: 80% !important;
+}
+
+/*Business page format*/
+
+.businessContact {
+    background-color: #eee;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.businessContactButton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.businessContactButton button {
+    width: 200px;
+}
+
+#businessContact h5 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#businessContact ul {
+    margin-bottom: 20px;
+}
+
+.businessDescription {
+    padding: 30px 0 0 30px;
+}
+
+.knowMore {
+    margin-top: 30px;
+}
+
+.headerBusiness {
+    overflow: hidden;
+    clear: both;
+}
+
+.titleLeft {
+    float: left;
+}
+
+.jobOffer {
+    float: right;
+    text-align: right;
+}
+
+.jobOffer a {
+    color: #666;
+    transition: color 0.5s;
+    background: url("../img/suitcase.png") 0 50% no-repeat;
+    padding-left: 20px;
+}
+
+.jobOffer a:hover {
+    color: #282e5c;
+    background: url("../img/suitcase_hover.png") 0 50% no-repeat;
+    transition: color 0.5s;
+    transition: background 0.5s;
+}
+
+/*Agenda page format*/
+
+.agendaCell .img-responsive {
+    margin-bottom: 10px;
+}
+
+.agendaCell {
+    background-color: #e3e3e3;
+    text-align: center;
+    position: relative;
+}
+
+#indexAgenda {
+    margin-bottom: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+#indexAgenda p {
+    margin-bottom: 10px;
+}
+
+#indexAgenda h4 {
+    margin: 15px;
+}
+
+#indexAgenda ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    background: url("../img/agenda_cell_bg.png") 50% 0 repeat-y;
+}
+
+#indexAgenda ul li {
+    background-color: #f64c10;
+    width: 250px;
+    padding: 8px;
+    margin: 50px auto;
+    border: 1px solid #f64c10;
+    border-radius: 15px;
+}
+
+#indexAgenda ul li:hover {
+    background-color: #282e5c;
+    border-color: #282e5c;
+}
+
+#indexAgenda ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+#indexAgenda ul li a:hover {
+    text-decoration: none;
+}
+
+.dateCell {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #2e6da4;
+    padding: 15px;
+    color: white;
+}
+
+.dateCellModal {
+    margin-bottom: 40px;
+}
+
+.dateCellModal span {
+    color: #fb6d3b;
+}
+
+.agendaCellTxt {
+    padding: 0 10px 20px 10px;
+    height: 160px;
+}
+
+.agendaCell h4 {
+    margin: 20px 0;
+}
+
+.agendaCell {
+    margin-bottom: 40px;
+}
+
+.agendaCell p {
+    margin-bottom: 20px;
+}
+
+/*Galery page format*/
+
+.modal-dialog {
+    width: 600px;
+}
+
+.thumbnail {
+    margin-bottom: 6px;
+}
+
+/* ---------- CSS FOOTER ---------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px 0;
+}
+
+.legalMentions{
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer h4 {
+    margin-top: 0;
+}
+
+footer .btn-primary {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+footer .btn-primary:hover {
+    background-color: #f64c10;
+}
+
+#footerMenu ul {
+    list-style-type: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+#footerMenu ul li {
+    padding: 8px 0;
+}
+
+#footerMenu ul li a {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+#footerMenu ul li a:hover {
+    color: #fb6d3b;
+    transition: color 0.5s;
+}
+
+/* ---------- CUSTOM ALIGN, PADDING, MARGIN ---------- */
+
+.no-padding {
+    padding: 0;
+}
+
+.float-right {
+    float: right;
+}
+
+/* ---------- MEDIAS QUERIES ----------  */
+
+/* ALl except mobile */
+@media (min-width: 768px) {
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+/* All except large desktop*/
+@media (max-width: 992px) {
+
+    .jobOffer {
+        float: left;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+}
+
+/*Mobile only*/
+@media (max-width: 768px) {
+
+    .indexNews{
+        margin-bottom: 60px;
+    }
+
+    .indexNews button{
+        margin-top: 20px;
+    }
+
+    .navbar-default .navbar-nav > .active > a {
+        border-width: 0;
+        border-radius: 0;
+    }
+
+    form{
+        padding: 0 20px;
+    }
+
+    #contact h4{
+        text-align: center;
+    }
+
+    #titleDeco {
+        width: 300px;
+    }
+
+    .jobOffer {
+        float: left;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        height: 50px;
+    }
+
+    #main {
+        padding: 0;
+    }
+
+    section {
+        margin-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    #bgHeader {
+        height: 150px;
+        width: 100%;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    #businessDescription {
+        padding: 30px 0 0 0;
+    }
+
+    .modal-dialog {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .businessContactButton button {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+}
+
+
